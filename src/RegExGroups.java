@@ -23,6 +23,10 @@ public class RegExGroups {
 
         in.close();
 
+        String str = "help  me  i have  no idea what's  going on!  !   !";
+        str = str.replaceAll(" {2,}", " ");
+        System.out.println(str);
+
     }//end main method
 
     public static String getDate(Scanner in, Pattern dateP){
