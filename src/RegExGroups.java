@@ -27,6 +27,20 @@ public class RegExGroups {
         str = str.replaceAll(" {2,}", " ");
         System.out.println(str);
 
+        //regExMatcher
+        Pattern p = Pattern.compile("(J|j)ava");
+
+        String nStr = "Java courses are the best! you have got to love java.";
+        System.out.println(nStr);
+
+        //initalise matcher
+        Matcher m = p.matcher(nStr);
+
+        //replacing all pattern occurrences
+        nStr = m.replaceAll("Oracle");
+        System.out.println(nStr);
+
+
     }//end main method
 
     public static String getDate(Scanner in, Pattern dateP){
